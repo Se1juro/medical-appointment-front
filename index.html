@@ -4,9 +4,100 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Car reparation</title>
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Medical Appointment</title>
   </head>
   <body>
-    <h1>Hello world</h1>
+    <header>
+      <div class="header__location">
+        <span>Location</span>
+        <select name="location">
+          <option value="" selected>Cali</option>
+          <option value="">Bogota</option>
+          <option value="">Medellin</option>
+        </select>
+      </div>
+      <i class="las la-bell"></i>
+    </header>
+    <main>
+      <section class="section-search">
+        <p>Good morning, User!</p>
+        <h1>Find your doctor here</h1>
+
+        <div class="container-input-search">
+          <input type="text" class="input-search-doctor" maxlength="36" />
+          <i class="las la-sliders-h"></i>
+        </div>
+      </section>
+      <section class="slider-types">
+        <div class="slider-types__item">
+          <span class="icon">🤧</span>
+          <p>General Practitioner</p>
+        </div>
+        <div class="slider-types__item">
+          <span class="icon">💊</span>
+          <p>Internal Medicine</p>
+        </div>
+        <div class="slider-types__item">
+          <span class="icon">😷</span>
+          <p>COVID - 19</p>
+        </div>
+        <div class="slider-types__item">
+          <span class="icon">🏥</span>
+          <p>Surgery</p>
+        </div>
+      </section>
+      <section class="notification">
+        <div class="notifcation__info">
+          <h2>Remember to always regulary check up your health with us</h2>
+          <p>#HealthyWithUs</p>
+        </div>
+        <figure class="notification__image">
+          <img src="./images/heartbeat.png" alt="Heart beat" />
+        </figure>
+      </section>
+      <section class="menu-app">
+        <div class="menu-app__card">
+          <h1>Consultation</h1>
+          <img src="./images/message.png" alt="Message consultation" />
+        </div>
+        <div class="menu-app__card">
+          <h1>Specialist</h1>
+          <img src="./images/compass.png" alt="Specialist ubication" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__item">
+        <i class="las la-home"></i>
+        <span>Home</span>
+      </div>
+      <div class="footer__item">
+        <i class="las la-calendar"></i>
+        <span>Schedule</span>
+      </div>
+      <div class="footer__item">
+        <i class="las la-sms"></i>
+        <span>Message</span>
+      </div>
+      <div class="footer__item">
+        <i class="las la-user"></i>
+        <span>Message</span>
+      </div>
+    </footer>
   </body>
 </html>
